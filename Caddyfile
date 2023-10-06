@@ -1,0 +1,5 @@
+:{$PORT} {
+	route {
+		exec awake {$WOL_MAC_ADDRESS}
+	}
+}

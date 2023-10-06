@@ -1,0 +1,16 @@
+version: "3.5"
+services:
+  wol:
+    container_name: wol
+    hostname: wol
+    network_mode: host
+    volumes:
+      - "./Caddyfile:/etc/caddy/Caddyfile"
+    restart: unless-stopped
+    image: caddy-with-awake
+    build:
+      context : .
+      dockerfile: Dockerfile
+    environment:
+      - WOL_MAC_ADDRESS
+      - PORT
