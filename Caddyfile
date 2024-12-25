@@ -1,4 +1,8 @@
 :{$PORT} {
+	basic_auth {
+		{$BASIC_AUTH_USERNAME} {$BASIC_AUTH_PASSWORD_HASH}
+	}
+
 	route {
 		exec awake {$WOL_MAC_ADDRESS}
 	}

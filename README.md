@@ -1,5 +1,11 @@
 # Caddy WOL
 
-Simple Wake On LAN container using caddy and awake
+Simple Wake On LAN container using caddy and awake.
 
-To be used behind a reverse proxy with basic-auth or the like
+Uses basic_auth and should be run behind reverse proxy with HTTPS to avoid leaking the password.
+
+# Usage
+- `cp .env_template .env`
+- Insert correct values in `.env`
+- `docker compose build --pull`
+- `docker compose up -d`
