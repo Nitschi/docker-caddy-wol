@@ -16,6 +16,8 @@ services:
       - PORT
       - BASIC_AUTH_USERNAME
       - BASIC_AUTH_PASSWORD_HASH
+      - WOL2_ROUTE
+      - WOL_MAC_ADDRESS2
 
 # Comment out if you don't use a reverse-proxy in a docker network.
 networks:
