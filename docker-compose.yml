@@ -1,4 +1,3 @@
-version: "3.5"
 services:
   wol:
     container_name: wol
@@ -17,10 +16,4 @@ services:
       - BASIC_AUTH_USERNAME
       - BASIC_AUTH_PASSWORD_HASH
       - WOL2_ROUTE
-      - WOL_MAC_ADDRESS2
-
-# Comment out if you don't use a reverse-proxy in a docker network.
-networks:
-  my_network:
-    name: my_network
-    external: true
+      - WOL2_MAC_ADDRESS

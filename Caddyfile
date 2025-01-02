@@ -8,6 +8,6 @@
 	}
 
 	route /{$WOL2_ROUTE} {
-        exec awake {$WOL_MAC_ADDRESS2}
-    }
+		exec awake {$WOL2_MAC_ADDRESS}
+	}
 }
