@@ -12,8 +12,7 @@ services:
       dockerfile: Dockerfile
     environment:
       - WOL_MAC_ADDRESS
+      - WOL_ROUTE
       - PORT
       - BASIC_AUTH_USERNAME
       - BASIC_AUTH_PASSWORD_HASH
-      - WOL2_ROUTE
-      - WOL2_MAC_ADDRESS
