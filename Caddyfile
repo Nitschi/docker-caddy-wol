@@ -3,7 +3,11 @@
 		{$BASIC_AUTH_USERNAME} {$BASIC_AUTH_PASSWORD_HASH}
 	}
 
-	route {
+	route /{$WOL_ROUTE} {
 		exec awake {$WOL_MAC_ADDRESS}
+	}
+
+	route /{$WOL2_ROUTE} {
+		exec awake {$WOL2_MAC_ADDRESS}
 	}
 }
